@@ -527,6 +527,7 @@ h3 {
 .text-control,
 .ta {
   padding: 13px 10px;
+  background-color: #f8d2cf;
 }
 
 .comments {
@@ -552,7 +553,7 @@ h3 {
 }
 
 .all-comments {
-  background-color: rgb(250, 239, 239);
+  background-color: rgb(250, 223, 223);
   padding-left: 40px;
 }
 
