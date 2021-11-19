@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <script src="utilities.js"></script>
+
+    <title>Contact - Easy Tutorials</title>
+  </head>
+  <body>
+    <section class="pages-header">
+      <nav class="pages-nav">
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onClick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true" onClick="showMenu()"></i>
+      </nav>
+
+      <h2>CONTACT</h2>
+    </section>
+    <div class="map">
+      <iframe
+        class="iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.382246563716!2d-71.11666009999999!3d42.3770029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377427d7f0199%3A0x5937c65cee2427f0!2sHarvard%20University!5e0!3m2!1sen!2set!4v1637280494134!5m2!1sen!2set"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <section class="contact-details">
+      <div class="addresses">
+        <div class="address-item">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <div class="not-icons">
+            <h4>Cambridge, MA, United States</h4>
+            <p>Open Monday to Friday</p>
+          </div>
+        </div>
+        <div class="address-item">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <div class="not-icons">
+            <h4>+16174951000</h4>
+            <p>Call Monday to Friaday</p>
+          </div>
+        </div>
+
+        <div class="address-item">
+          <i class="fa fa-globe" aria-hidden="true"></i>
+          <div class="not-icons">
+            <h4>https://www.harvard.edu/</h4>
+            <p>Keep in touch any time any where.</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <div class="form-items">
+            <input placeholder="Enter Name" class="text-control" type="text" />
+            <input placeholder="Enter Email" class="text-control" type="text" />
+            <input placeholder="Subject" class="text-control" type="text" />
+            <textarea
+              placeholder="Leave Comment"
+              class="ta"
+              id="comment"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <a class="hero-btn">Send Message</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We offer the best education structred in a number of courses. We offer
+        the best education structred in a number of courses. <br />
+        We offer the best education structred in a number of courses.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+  </body>
+</html>
