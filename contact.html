@@ -18,7 +18,7 @@
       integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
       crossorigin="anonymous"
     />
-    <script src="utilities.js"></script>
+    <!-- <script src="utilities.js"></script> -->
 
     <title>Contact - Easy Tutorials</title>
   </head>
@@ -113,5 +113,38 @@
       </div>
       <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
     </section>
+
+    <script>
+      date = new Date("Mar 25 2015").toDateString();
+
+      window.onload = (e) => {
+        document.getElementById("created-date").innerHTML = date;
+      };
+
+      function showMenu() {
+        navLinks = document.getElementById("navLinks");
+
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks = document.getElementById("navLinks");
+
+        navLinks.style.right = "-200px";
+      }
+
+      function showContent(ai, ac) {
+        articleIntro = document.getElementById(ai);
+        articleIntro.hidden = true;
+
+        articleContent = document.getElementById(ac);
+        articleContent.hidden = false;
+      }
+
+      function showComments(e, id) {
+        showCom = document.getElementById(id);
+        showCom.hidden = !showCom.hidden;
+        e.text = e.text === "Hide Comments" ? "Show Comments" : "Hide Comments";
+      }
+    </script>
   </body>
 </html>
